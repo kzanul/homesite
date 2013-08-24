@@ -6,16 +6,7 @@
 <html class="">
 <!--<![endif]-->
 <head>
-<!--
- _   __     _       ______                  _     _ _       
-| | / /    (_)     |___  /                 | |   | (_)      
-| |/ / _ __ _ ___     / /  __ _ _ __  _   _| | __| |_ _ __  
-|    \| '__| / __|   / /  / _` | '_ \| | | | |/ _` | | '_ \ 
-| |\  \ |  | \__ \ ./ /__| (_| | | | | |_| | | (_| | | | | |
-\_| \_/_|  |_|___/ \_____/\__,_|_| |_|\__,_|_|\__,_|_|_| |_|
-                                                            
- Y'all stay classy!                                                           
--->
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kris Zanuldin</title>
