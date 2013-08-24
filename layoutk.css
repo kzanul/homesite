@@ -1,0 +1,542 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	max-width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+html {
+	background-color: #D7503E;
+}
+
+#back_first {
+	width: 100%;
+	height: 100%;
+	
+	background-image: none;
+	background-size: cover;
+	}
+.back_container {
+	width: 95%;
+}
+
+
+.heading {
+		
+	
+}
+
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.panes-left {
+	max-width: 20%;
+	float: left;	
+}
+
+.panes-text {
+	max-width: 100%;
+	font-size: 120%;
+	padding-left: 10%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#map-canvas {
+
+	width: 100%;
+	margin-right: 3%
+
+}
+#main-display {
+max-width: 100%;	
+}
+
+#display-container {
+	max-width: 100%;
+}
+
+#panes-start {
+	width: 70%;
+	font-size: 1.1em;
+}
+
+
+#panes-status {
+	display: none;
+
+}
+
+#panes-status-weather {
+ font-size: 2em;
+  }
+
+
+#panes-display {
+	max-width: 90%;
+	font-size: 120%;
+}
+
+#blog-text {
+	max-width: 100%;	
+}
+
+#footer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+
+.about-title {
+	font-size: 300%;	
+}
+#about-text {
+	font-size: 1.2em;	
+}
+
+#picture-about {
+	margin-right: 5%;
+	
+}
+
+#content {
+	width: 80%;
+	font-size: 120%;
+	z-index:100;
+	background: #fff;
+}
+
+}
+/* Tablet Layout: 481px to 1150px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 769px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+
+html {
+	background-color: #47B8C8;
+}
+
+#back_first {
+	width: 100%;
+	height: 100%;
+	background-image: url('backeffect1.png');
+	background-size: 100% 100%;
+	}
+.back_container {
+	width: 98%;
+	padding-left: 2%;
+}
+
+.heading {
+	
+}
+
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#panes-start {
+	width: 30%;
+	 font-size: 1.1em;
+}
+
+#panes-status {
+	display: inline;
+}
+
+#panes-status-weather {
+ font-size: 2em;
+  }
+
+
+.panes {
+	width: 100%;	
+}
+.panes-left {
+	max-width: 10%;
+	float: left;
+}
+
+.panes-text {
+	max-width: 100%;
+	font-size: 200%;
+	padding-left: 10%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#display-container {
+	width: 100%;
+}
+
+#map-canvas {
+
+	min-height: 350px;
+	width: 100%;
+	margin-right: 3%
+
+}
+
+#main-display {
+	float: left;
+	max-width: 100%;	
+	margin-right: 3%;
+}
+
+#panes-display {
+	max-width: 60%;
+	font-size: 120%;
+}
+
+#blog-text {
+	max-width: 100%;	
+}
+
+#footer {
+	width: 88.2%;
+	max-width: 1300px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+
+#about-text {
+	font-size: 1.2em;
+}
+
+#content {
+	width: 80%;
+	font-size: 120%;
+	z-index:100;
+	background: #fff;
+}
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1399px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+
+html {
+	background-color: #47B8C8;
+}
+
+#back_first {
+	
+	
+	background-image: url('backeffect1.png');
+	background-size: 100% 100%;
+	}
+.back_container {
+	width: 94%;
+	padding-left: 2%;
+}
+
+.heading {
+	
+		
+}
+
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#panes-start {
+	width: 30%;
+	font-size: 1.1em;
+}
+
+#panes-status {
+	display: inline;
+}
+
+#panes-status-weather {
+ font-size: 2.5em;
+  }
+
+.panes {
+	width: 100%;	
+}
+.panes-left {
+	max-width: 10%;
+	float: left;
+}
+
+.panes-text {
+	max-width: 100%;
+	font-size: 120%;
+	padding-left: 10%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#display-container {
+	max-width: 100%;
+}
+
+#map-canvas {
+	float: left;
+	width: 70%;
+	min-height: 450px;
+	margin-right: 3%
+}
+
+#main-display {
+	float: left;
+	max-width: 100%;	
+	margin-right: 3%;
+}
+
+#panes-display {
+	max-width: 100%;
+	font-size: 120%;
+}
+
+#blog-text {
+	max-width: 100%;	
+}
+
+#footer {
+	width: 88.2%;
+	max-width: 1300px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+
+#picture-about {
+	margin-left: 1%;
+
+}
+#about-container {
+	width: 50%;
+	float: left;
+}
+
+.about-title {
+	font-size: 300%;	
+}
+#about-text {
+	font-size: 1.5em;	
+}
+
+#content {
+	width: 100%;
+	font-size: 150%;
+	z-index:100;
+	background: #fff;
+}
+
+
+}
+
+/* Desktop Layout: 1232px to a max of 2000px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1400px) {
+html {
+	background-color: #47B8C8;
+}
+
+.gridContainer {
+	width: 88.2%;
+	max-width: 2000px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+
+#back_first {
+
+	background-image: url('backeffect1.png');
+	}
+.back_container {
+	width: 94%;
+	padding-left: 2%;
+}
+
+ #panes-status-weather {
+ font-size: 2.5em;
+  }
+
+#panes-status-fuel {
+
+  }
+
+#panes-status-exercise {
+
+  }
+
+.heading {
+	
+	
+}
+
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#panes-start {
+	width: 30%;
+	font-size: 1.2em;
+}
+
+#panes-status {
+	display: inline;
+}
+.panes {
+	width: 100%;	
+}
+.panes-left {
+	max-width: 10%;
+	float: left;
+}
+
+.panes-text {
+	max-width: 100%;
+	font-size: 150%;
+	padding-left: 10%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#display-container {
+	max-width: 100%;
+}
+
+#map-canvas {
+	float: left;
+	width: 50%;
+	margin-right: 3%
+
+}
+#main-display {
+	float: left;
+	max-width: 100%;	
+	margin-right: 3%;
+}
+
+#panes-display {
+	max-width: 100%;
+	font-size: 150%;
+}
+
+#blog-text {
+	max-width: 100%;	
+}
+
+#footer {
+	width: 88.2%;
+	max-width: 1300px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+
+#picture-about {
+	margin-left: 1%;
+	
+}
+#about-container {
+	width: 60%;
+	float: left;
+	margin-left: 2%;
+}
+
+.about-title {
+	font-size: 500%;	
+}
+#about-text {
+	font-size: 1.8em;	
+}
+
+#content {
+	width: 100%;
+	font-size: 150%;
+	z-index:100;
+	background: #fff;
+}
+
+};
