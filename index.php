@@ -17,7 +17,7 @@
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-33627988-2']);
+  _gaq.push(['_setAccount', '*your google analytics ID*']);
   _gaq.push(['_trackPageview']);
 
   (function() {
