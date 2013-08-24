@@ -1,0 +1,115 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kris Zanuldin's Snaps</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="layoutk.css" rel="stylesheet" type="text/css">
+    
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33627988-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  
+ 
+</script>
+<script src="respond.min.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+     <div id="back_first">
+  <div class="back_container">
+<br>
+	<div class="heading"><img alt="my snaps" title="my snaps" src="mysnaps.svg"></div>
+    <div class="panes">
+ 
+ 			<div id="headertext" onclick="location.href='index.php';"  style="cursor:pointer;"><a href="#"></a>   
+   	 		<div class="panes-left">
+    		<div class="panes-text">     
+    		Home
+            </div>
+            </div>
+    	</div>
+    	<div id="headertext" onclick="location.href='http://www.kzanul.com/blog';"  style="cursor:pointer;"><a href="#"></a>
+        <div class="panes-left">
+    		<div class="panes-text">
+    		Blog	
+            </div>
+            </div>
+    	</div>
+        <div id="headertext" onclick="location.href='about.html';"  style="cursor:pointer;"><a href="#"></a>
+        <div class="panes-left">
+    		<div class="panes-text">
+            
+    		About
+            </div>
+            </div>
+    	</div>
+    	<div id="headertext" onclick="location.href='instagram.html';"  style="cursor:pointer;"><a href="#"></a>
+        <div class="panes-left">
+        <div class="panes-last">
+    		<div class="panes-text">
+    		Snaps
+            </div>
+            </div>
+            </div>
+    	</div>
+    
+    </div>
+<br>
+  <div id="display-container">
+<div class="instagram">
+<!-- GLOBAL CORE SCRIPTS -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+<script>
+
+//HELP FROM HERE...
+//https://forrst.com/posts/Using_the_Instagram_API-ti5
+
+// small = + data.data[i].images.thumbnail.url +
+// resolution: low_resolution, thumbnail, standard_resolution
+
+$(function() {
+    $.ajax({
+    	type: "GET",
+        dataType: "jsonp",
+        cache: false,
+        url: "https://api.instagram.com/v1/users/42503984/media/recent/?access_token=42503984.3131b77.442d02dde585474baebcd007183ecfc2",
+        success: function(data) {
+            for (var i =0; i < 12; i++) {
+        $(".instagram").append("<div class='instagram-placeholder'><a target='_blank' href='" + data.data[i].link +"'><img class='instagram-image' src='" + data.data[i].images.low_resolution.url +"' /></a></div>");   
+      		}     
+                            
+        }
+    });
+});
+</script>
+
+</div>
+ 
+<br>
+</div>
+</div>
+</div>
+</div>
+
+<div id="footer">Copyright 2013 Kris Zanuldin. All rights reserved.</div> 
+
+
+</body>
+</html>
