@@ -140,7 +140,7 @@ if (document.documentElement.clientWidth > 640) {
       type: "GET",
         dataType: "jsonp",
         cache: false,
-        url: "https://api.forecast.io/forecast/1be3906099784974c31f83022e0921e9/43.640051,-79.347382",
+        url: "https://api.forecast.io/forecast/*your token*/*your lat, long*",
              error: function(xhr, status, error) {
           console.log(error);
           var para=document.createElement("h1");
@@ -379,7 +379,7 @@ $(document).ready(function() {
    <?php 
 $curl_handle=curl_init();
 $data = array('appid: fuelband', "Accept: application/json");
-curl_setopt($curl_handle,CURLOPT_URL,'https://api.nike.com/me/sport?access_token=64d48a4d12fea1a0d1d942665f8066e3');
+curl_setopt($curl_handle,CURLOPT_URL,'https://api.nike.com/me/sport?access_token=*your token*');
 curl_setopt($curl_handle,CURLOPT_CONNECTTIMEOUT,2);
 curl_setopt($curl_handle,CURLOPT_HTTPHEADER,$data);
 curl_setopt($curl_handle,CURLOPT_RETURNTRANSFER,1);
