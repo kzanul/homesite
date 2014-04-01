@@ -1,5 +1,3 @@
 homesite
 ========
-
-My homesite code. 
-www.kzanul.com
+Archive of my old homesite
